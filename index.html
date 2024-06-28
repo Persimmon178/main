@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Final Project</title>
+</head>
+
+<body>
+
+<div class="menu">
+    <div class="Login">
+        <input type="text" id="login"/>
+        <div class="pass">
+            <input type="password" id="pass"/>
+            <div class="button">
+                <button class="pp" id="button">
+                    Войти
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+
+    </div>
+</div>
+
+
+
+<style>
+    body{
+        background: black;
+    }
+    .pp{
+        transition: all 0.3s;
+        box-shadow: 0px 0px 10px #a100ff;
+        background: #a100ff;
+        color: white;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius:5px ;
+        font-size: 10px;
+    }
+    .pp:hover{
+        background: white;
+        color: #a100ff;
+        border: 2px solid #a100ff;
+        font-size: 10px;
+    }
+    .menu {
+        text-align: center;
+        color: white;
+    }
+    .Login
+    {
+        padding-top: 20%;
+    }
+    .pass
+    {
+        padding-top: 7px;
+    }
+    .button{
+        padding-top: 7px;
+    }
+</style>
+
+<script>
+    let password = document.getElementById("pass")
+    let login = document.getElementById("login")
+    let button = document.getElementById("button")
+    function enter()
+    {
+        if(login.value == "PrigozhinZhenya" && password.value == "1223334444")
+        {
+            window.open("Forum.html")
+        }
+        else
+        {
+            alert("Неправильно! Попробуйте еще раз.")
+        }
+    }
+
+    button.onclick = enter;
+</script>
+
+</body>
+</html>
